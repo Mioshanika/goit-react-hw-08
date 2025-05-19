@@ -1,5 +1,5 @@
 import s from './contactform.module.css';
-import { addContact } from '../../redux/contactsOps.js';
+import { addContact } from '../../redux/contacts/operations';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useId } from 'react';
@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 export default function ContactForm() {
   const dispatch = useDispatch();
   const handleSubmit = (values, actions) => {
-    dispatch(addContact({ data: values }));
+    dispatch(addContact(values));
     actions.resetForm();
   };
   const nameFieldId = useId();

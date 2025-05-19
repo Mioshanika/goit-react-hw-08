@@ -1,1 +1,1 @@
-GoIT React study module #7, homework.
+GoIT React study module #8, homework.

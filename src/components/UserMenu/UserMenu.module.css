@@ -1,0 +1,11 @@
+.btn_logout {
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  color: var(--bg-color);
+  border: none;
+  cursor: pointer;
+}
+.btn_logout:hover {
+  color: var(--inpt-color);
+}

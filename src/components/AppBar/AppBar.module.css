@@ -1,0 +1,17 @@
+.appbar {
+  padding: 4px 12px;
+  background-color: darkolivegreen;
+  color: var(--bg-color);
+}
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  gap: 12px;
+}

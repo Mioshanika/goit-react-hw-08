@@ -30,3 +30,31 @@ body {
 ul {
   list-style-type: none;
 }
+h3 {
+  margin: 8px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--bg-color);
+}
+nav a:hover {
+  color: var(--inpt-color);
+}
+.active_nav {
+  color: var(--inpt-color);
+}
+.global_container {
+  padding: 0 10px;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}

@@ -15,9 +15,6 @@
     'cl';
   justify-content: center;
 }
-h1 {
-  margin-left: 24px;
-}
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -29,9 +26,6 @@ h1 {
       'cf cl'
       'sb cl';
   }
-  h1 {
-    margin-left: 68px;
-  }
 }
 @media only screen and (min-width: 1000px) {
   .container {
@@ -39,8 +33,5 @@ h1 {
   }
   .main_grid {
     justify-content: unset;
-  }
-  h1 {
-    margin-left: 32px;
   }
 }
