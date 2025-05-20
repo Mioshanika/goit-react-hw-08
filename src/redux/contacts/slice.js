@@ -1,4 +1,5 @@
 import { fetchContacts, addContact, deleteContact } from './operations';
+import { logout } from '../auth/operations';
 import { createSlice } from '@reduxjs/toolkit';
 
 // External reducers handlers
@@ -39,6 +40,7 @@ const slice = createSlice({
       .addCase(fetchContacts.pending, handlePending)
       .addCase(fetchContacts.fulfilled, fetchContactsFulfilled)
       .addCase(fetchContacts.rejected, handleRejected)
+      .addCase(logout.fulfilled, () => initialState)
       .addCase(addContact.pending, handlePending)
       .addCase(addContact.fulfilled, addContactFulfilled)
       .addCase(addContact.rejected, handleRejected)

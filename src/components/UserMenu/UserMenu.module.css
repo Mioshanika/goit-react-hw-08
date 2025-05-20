@@ -9,3 +9,11 @@
 .btn_logout:hover {
   color: var(--inpt-color);
 }
+.user_name {
+  font-size: 16px;
+}
+.user_menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

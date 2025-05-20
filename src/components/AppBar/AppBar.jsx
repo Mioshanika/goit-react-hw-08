@@ -11,11 +11,8 @@ export default function AppBar() {
   return (
     <header className={s.appbar}>
       <div className={s.container}>
-        {isLoggedIn ? <h3>{currentUser.name.toUpperCase()}</h3> : <h3>GUEST</h3>}
-        <div className={s.navbar}>
-          <Navigation />
-          {isLoggedIn ? <UserMenu /> : <AuthNav />}
-        </div>
+        <Navigation />
+        <div className={s.navbar}>{isLoggedIn ? <UserMenu /> : <AuthNav />}</div>
       </div>
     </header>
   );
